@@ -1,0 +1,75 @@
+.nav, h1, h2, p {
+    font-family: 'Raleway';
+    color: white;
+}
+
+.nav-item {
+    margin: 10px;
+    color: white;
+    font-size: 17px;
+}
+
+.nav-item:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.nav-item:not(:hover) {
+    color: white;
+    transition: 0.5s;
+}
+
+nav:hover {
+    background-color: pink;
+    transition: 0.5s;
+}
+
+nav:not(:hover) {
+    transition: 0.5s;
+}
+
+#particles-js {
+    background-color: rgb(0,0,36);
+}
+.container {
+    border: 1px solid white;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    height: 200px;
+    margin-top: -100px; /* half of you height */
+    width: 500px;
+    margin-left: -250px; /* half of you width */
+}
+
+#social-media {
+    background-color: darkslategray;
+    padding: 20px;
+}
+
+#social-media a {
+    color: white;
+}
+
+#social-media a:hover {
+    color: black;
+    transition: .5s;
+}
+
+#social-media a:not(:hover) {    
+    transition: 1s;
+}
+
+#social-media li {
+    display: inline;
+    font-size: 25px;
+    padding: 20px 30px;
+}
+#ex {
+    background-color: green;
+}
+
+body {
+    background-color: rgb(0,0,36);
+
+}
