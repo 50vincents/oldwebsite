@@ -20,7 +20,7 @@
 }
 
 nav:hover {
-    background-color: pink;
+    background-color: darkgray;
     transition: 0.5s;
 }
 
@@ -43,12 +43,20 @@ nav:not(:hover) {
 }
 
 #social-media {
-    background-color: darkslategray;
     padding: 20px;
 }
 
 #social-media a {
     color: white;
+}
+
+#social-media:hover {
+    background-color: darkgray;
+    transition: 1s;
+}
+
+#social-media:not(:hover) {    
+    transition: 1s;
 }
 
 #social-media a:hover {
