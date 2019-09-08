@@ -31,8 +31,19 @@ nav:not(:hover) {
 #particles-js {
     background-color: rgb(0,0,36);
 }
-.container {
+
+#about {
     border: 1px solid white;
+    height: 80%;
+}
+
+html {
+   /* border: 1px solid green;*/
+    height: 100%;
+}
+
+.container {
+ /*   border: 1px solid white;*/
     position: absolute;
     left: 50%;
     top: 40%;
@@ -42,21 +53,19 @@ nav:not(:hover) {
     margin-left: -250px; /* half of you width */
 }
 
-#social-media {
-    padding: 20px;
+.about-container {
+  /*  border: 1px solid white;*/
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    height: 400px;
+    margin-top: -200px; /* half of you height */
+    width: 800px;
+    margin-left: -400px; /* half of you width */
 }
 
 #social-media a {
     color: white;
-}
-
-#social-media:hover {
-    background-color: darkgray;
-    transition: 1s;
-}
-
-#social-media:not(:hover) {    
-    transition: 1s;
 }
 
 #social-media a:hover {
@@ -73,11 +82,71 @@ nav:not(:hover) {
     font-size: 25px;
     padding: 20px 30px;
 }
+
 #ex {
     background-color: green;
 }
 
 body {
     background-color: rgb(0,0,36);
-
+    height: 100%;
 }
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border: 1px solid white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+img {
+    width:200px; 
+    height:300px; 
+    display: block; 
+    margin-top: 25px; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+button{
+  margin-top: 40px;
+  background: pink;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:40px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background: rgb(0,0,36);
+  color: pink;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: pink;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
