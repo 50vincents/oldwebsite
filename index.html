@@ -19,52 +19,137 @@
 </head>
 
 <body>
+      <!-- Navigation -->
+    <div id="particles-js"></div>
+    <div class="dropdown" style="float:right;">
+        <div class="bounce" style="color: white; font-size: 18px">Menu</div>
+        <div class="dropdown-content">
+          <a href="#second-section">About</a>
+          <a href="#third-section">Experience</a>
+          <a href="html/music.html">Music</a>
+          <a href="#fifth-section">Contact</a>
+        </div>
+      </div>
     
-    <div id="particles-js">
-        <!-- Navigation -->
-        <nav class="nav justify-content-end">
-            <a href="./index.html" class="nav-item">Vincent Thai</a>
-            <a href="html/about.html" class="nav-item">About</a>
-            <a href="html/experience.html" class="nav-item">Experience</a>
-            <a href="html/music.html" class="nav-item">Music</a>
-            <a href="html/contact.html" class="nav-item">Contact</a>    
-        </nav>
-        
+    <div id="first-section">
+      
         <!-- Introduction main page -->
         <div class="container text-center">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-md-12">
-                    <h1>Hey... I'm Vincent Thai.</h1>
+                    <h1 style="font-size: 60px">Hey... I'm Vincent Thai.</h1>
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row">
                     <div class="col-md-12">
-                        <h2>Software Developer</h2>
+                        <h2 style="font-size: 40px">Software Developer</h2>
                     </div>
             </div>
             <div class="row">
               <div class="col-md-12">
-                  <a href="html/about.html"><button>See more</button></a>
+                  <a href="#second-section"><button id="home-button">See more</button></a>
               </div>
             </div>
         </div>
+      </div>>
+
+    <!-- About page -->
+    <div id="second-section">
+      <div class="about-container">
+        <div id="content-wrap">
+              <div class="row">
+                  <div class="col-md-6">
+                      <h1>About Me</h1>
+                      <p>Whether you stumbled here on accident or was curious about my work, I'm grateful and 
+                        humbled that you're here! My name is Vincent and I'm a fourth year Computer Science
+                        student at UC Santa Cruz. I'm a developer based in San Francisco with a focus in Web
+                        Development and a strong interest DevOps and Cloud Computing.  </p>
+                        <p>In my free time, I enjoy playing sports and outdoor activities, playing guitar,
+                            singing, and producing music, and catching up with friends. Anyhow, take a look
+                            around and see if you find something you like... and feel free to reach out!</p>
+                  </div>
+                  <div class="col-md-6">
+                      <img id="prof-pic" src="./images/prof2.jpg">
+                  </div>
+              </div>
+              </div>
+      </div>
     </div>
 
-    <footer>
+    <div id="resume">
+      <div class="res-container">
+        <div class="row">
+          <div class="col-md-12" style="text-align: center;">
+            <a href="./RESUME.pdf" target="_blank" style="font-size: 30px; color: black">Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- Experience page -->
+     <div id="third-section">
+     <div class="exp-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>My Work..</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div id="first" class="col-md-6">
+                <img id="leftapp" src="./images/work.png">
+                <div class="left">
+                    <a href="https://github.com/50vincents/workout-app" target="_blank"><div class="textmsg">Workout App</div></a>
+                </div>
+            </div>
+            <div id="first" class="col-md-6">
+                <img id="rightapp" src="./images/code.jpeg">
+                <div class="right">
+                    <a href="https://github.com/50vincents/workout-app" target="_blank"><div class="textmsg">Blockchain App</div></a>
+                </div>
+            </div>
+        </div>
+     </div>
+     </div>
+        
+        <div id="fifth-section">
+        <div class="contact-container">
+            <div class="row">
+                <div class="col-md-12" style="text-align: center">
+                  <h1>Contact me!</h1>
+                </div>
+                <div class="row" style="text-align: center">
+                    <div class="col-sm-4">
+                        <p>Questions? Feel free to reach out! I'd love to get to know you better. 
+                           You can also contact me by email: </p>
+                        <a href="mailto:vincethai035@gmail.com"><p id="email-text">vincethai035@gmail.com</p></a>
+                    </div>
+                    <div class="col-sm-8">
+                        <form action="MAILTO:vincethai035@gmail.com" method="post" enctype="text/plain">
+                            <input type="text" id="name" placeholder="Name:">
+                            <input type="email" id="email" placeholder="Email:">
+                            <textarea rows="7" id="msg" placeholder="Shoot me a message!"></textarea>
+                            <button id="submit-button" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+      </div>
+      </div>
+          
+
         <div id="social-media">
-            <div class="container-fluid text-center">
+            <div class="container-fluid">
               <div class="row">
                 <div class="col-sm-12">
                   <ul>
-                    <li><a href="https://www.linkedin.com/in/vincethai/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://www.facebook.com/vince.thai533"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.instagram.com/50vincents/"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://github.com/50vincents"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/vincethai/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/50vincents" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://soundcloud.com/50vincents" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
                   </ul>
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-12" style="padding: 10px">
+                <div class="col-sm-12" style="padding: 10px; text-align: center">
                   <p>"Stay hungry, stay foolish" - Steve Jobs</p>
                 </div>
               </div>
@@ -75,7 +160,6 @@
               </div>
             </div>
         </div>
-      </footer>
     
 
     <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
@@ -85,7 +169,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
-
+ 
 </body>
 
 
