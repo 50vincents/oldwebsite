@@ -1,159 +1,131 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-    <!-- Always include viewport meta inside head section to enable touch zooming/proper rendering on mobile devices -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vincent Thai</title>
+  <link rel="stylesheet" type="text/css" href="css/styl.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+  <link rel="icon" href="./images/logo.png">
 
-    <title>Vincent Thai</title>
-
-    <!-- Bootstrap + stylesheets -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <link rel="icon" href="./images/logo.png">
 </head>
 
 <body>
-    <div id="particles-js"></div>
-    <!-- Navigation -->
-    <div class="dropdown">
-      <div class="bounce">MENU</div>
-      <div class="dropdown-content">
-        <a href="#second-section">About</a>
-        <a href="#third-section">Experience</a>
-        <a href="#fourth-section">Music</a>
-        <a href="#fifth-section">Contact</a>
-      </div>
-    </div>
+  <div id="particles-js"></div>
 
-    <!-- Introduction main page -->
-    <div id="first-section">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12 col-xs-12">
-            <h1 style="font-size: 50px">Hey... I'm Vincent Thai.</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-xs-12">
-            <h2 style="font-size: 30px">Software Developer</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 col-xs-12">
-            <a href="#second-section"><button id="home-button">See more</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <nav class="zone blue sticky">
+    <ul class="main-nav">
+      <li><a href="">About</a></li>
+      <li><a href="">Products</a></li>
+      <li><a href="">Our Team</a></li>
+      <li class="push"><a href="">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- About section -->
-    <div id="second-section">
-      <div class="about-container">
-        <h1 style="margin-bottom: 5%;">About Me</h1>
-        <div class="row">
-          <div class="col-md-4 col-xs-4">
-            <img id="prof-pic" src="./images/prof.jpg" style="margin-left: 60%;">
-          </div>
-          <div class="col-md-8 col-xs-8">
-              <p style="font-size: 20px; margin-right: 25%; margin-left: 15%;">
-                Whether you stumbled here on accident or were curious about my work, I'm grateful and 
-                humbled that you're here! I'm a 2020 Computer Science graduate from the 
-                <a href="https://www.ucsc.edu/" target="_blank">University of
-                  California, Santa Cruz</a>. I'm based in San Francisco and when I'm not writing software, you
-                can catch me outdoors or producing music! 
-              </p>
-              <p style="font-size: 20px; margin-right: 25%; margin-left: 15%;">
-                Anyhow... take a look at some of my projects
-                and feel free to reach out!
-              </p>   
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container">
+    <h1>Hey... I'm Vincent Thai. 
+      <br/> Software Developer 
+      </br> 
+      <a href="#second-section"><button id="home-button">See more</button></a>
+    </h1>
+  </div>
 
-    <!-- Experience section -->
-    <div id="third-section">
-      <div class="exp-container">
-        <div class="row">
-          <div class="col-md-12 col-xs-12">
-            <h1>Projects</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div id="first" class="col-md-4 col-xs-4">
-            <img id="leftapp" src="./images/demo2.png">
-              <div class="left">
-                <a href="https://github.com/50vincents/Car-Make-and-Model-Detection" target="_blank">
-                <div class="textmsg">Car Make and Model Detection</div></a>
-              </div>
-          </div>
-          <div id="first" class="col-md-4 col-xs-4">
-            <img id="leftapp" src="./images/demo.png">
-              <div class="left">
-                <a href="https://github.com/jiyingqi/QuietPlace/tree/master/QuietPlace" target="_blank">
-                <div class="textmsg">Project Quiet Place</div></a>
-              </div>
-          </div>
-          <div id="first" class="col-md-4 col-xs-4">
-            <img id="leftapp" src="./images/code.jpeg">
-              <div class="left">
-                <a href="https://github.com/50vincents/workoutapp" target="_blank">
-                <div class="textmsg">FitLit</div></a>
-              </div>
-          </div>
-        </div>
-      </div>
+  <div class="about-container">
+    <div class="title about">
+      <h1>About Me</h1>
     </div>
-        
-    <!-- Music section tbd -->
+    <img id="prof-pic" src="./images/prof.jpg">
+    <p id="para">
+      Whether you stumbled here on accident or were curious about my work, I'm grateful and 
+      humbled that you're here! I'm a 2020 Computer Science graduate from the 
+      <a style="color: blue;" href="https://www.ucsc.edu/" target="_blank">University of
+        California, Santa Cruz</a>. I'm based in San Francisco and when I'm not writing software, you
+      can catch me outdoors or producing music! </br> </br>
+      Anyhow... take a look at some of my projects
+      and feel free to reach out!
+    </p> 
+  </div>
 
-    <!-- Contact section -->
-    <div id="fifth-section">
-      <div class="contact-container">
-        <div class="row">
-          <div class="col-md-12 col-xs-12" style="text-align: center">
-            <h1>Contact</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-xs-6">
-            <p style="font-size: 17px; margin-left: 30%; margin-right: 20%;">
-              Questions? Feel free to reach out! I'd love to get to know you better. Leave a message, check out my resume, or
-              follow me on one of my social networks.
-            </p>
-            <ul id="social-media">
-              <li><a href="https://www.linkedin.com/in/vincethai/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href="https://github.com/50vincents" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://github.com/50vincents/50vincents.github.io/blob/master/RESUME.pdf" target="_blank"><i class="fas fa-file"></i></a></li>
-              <li><a href="mailto:vincethai035@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
-              <li><a href="https://soundcloud.com/50vincents" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-xs-6">
-            <form style="font-size: 17px; margin-left: -5%;" action="https://formspree.io/myydoekp" method="POST">
-              <input style="border-radius: 5px;" type="text" name="name" placeholder="Your Name" required>
-              <input style="border-radius: 5px;" type="email" name="_replyto" placeholder="Your Email" required>
-              <textarea style="border-radius: 5px;" rows="7" name="message" placeholder="Shoot me a message!" required></textarea>
-              <button style="border-radius: 5px;" id="submit-button" type="submit">Send</button>
-            </form>
-          </div>
+  <div class="exp-container">
+    <div class="blue grid-wrapper">
+      <div class="title">
+        <h1>Projects</h1>
+      </div>
+      <div class="box zone">
+        <img id="myBtn" src="./images/demo2.png">
+      </div>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Some text in the Modal..</p>
         </div>
       </div>
-    </div>          
+
+      <div class="boxtwo">
+        <a href="https://github.com/50vincents/Car-Make-and-Model-Detection" target="_blank">
+        <div class="desc">Car Make and Model Detection</div></a>
+      </div>
+
+
+      <div class="box zone"><img src="./images/demo.png"></div>
+      <div class="box zone"><img src="./images/code.jpeg"></div>
+    </div>
+  </div>
+
+  <div class="contact-container">
+    <div class="title">
+      <h1>Contact</h1>
+    </div>
+    <div>
+      <p>
+        Questions? Feel free to reach out! I'd love to get to know you better. Leave a message, check out my resume, or
+        follow me on one of my social networks.
+      </p>
+      <ul id="social-media">
+        <li><a href="https://www.linkedin.com/in/vincethai/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/50vincents" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://github.com/50vincents/50vincents.github.io/blob/master/RESUME.pdf" target="_blank"><i class="fas fa-file"></i></a></li>
+        <li><a href="mailto:vincethai035@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
+        <li><a href="https://soundcloud.com/50vincents" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
+      </ul>
+    </div>
+    <form style="font-size: 17px; margin-left: -5%;" action="https://formspree.io/myydoekp" method="POST">
+      <input style="border-radius: 5px;" type="text" name="name" placeholder="Your Name" required>
+      <input style="border-radius: 5px;" type="email" name="_replyto" placeholder="Your Email" required>
+      <textarea style="border-radius: 5px;" rows="7" name="message" placeholder="Shoot me a message!" required></textarea>
+      <button style="border-radius: 5px;" id="submit-button" type="submit">Send</button>
+    </form>
+  </div>
+
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
     
-    <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- integrity/cross origin implement subresource integrity (sri) to minigate risk of attacks from compromised CDNS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
-</body>
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+</body>
 </html>
