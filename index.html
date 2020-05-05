@@ -45,30 +45,24 @@
     </p> 
   </div>
 
-  <div class="exp-container">
-    <div class="blue grid-wrapper">
+  <div class="grid-wrapper">
       <div class="title">
         <h1>Projects</h1>
       </div>
-      <div class="box zone">
-        <img id="myBtn" src="./images/demo2.png">
-      </div>
+      <div class="box"><img class="myBtn" src="./images/demo2.png"></div>
+      <div class="box"><img class="myBtn" src="./images/demo.png"></div>
+      <div class="box"><img class="myBtn" src="./images/code.jpeg"></div>
+      <div class="box"><img class="myBtn" src="./images/code.jpeg"></div>
+      <div class="box"><img class="myBtn" src="./images/code.jpeg"></div>
+      <div class="box"><img class="myBtn" src="./images/code.jpeg"></div>
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
+          <p style="color: black;">Some text in the Modal..</p>
         </div>
       </div>
 
-      <div class="boxtwo">
-        <a href="https://github.com/50vincents/Car-Make-and-Model-Detection" target="_blank">
-        <div class="desc">Car Make and Model Detection</div></a>
-      </div>
 
-
-      <div class="box zone"><img src="./images/demo.png"></div>
-      <div class="box zone"><img src="./images/code.jpeg"></div>
-    </div>
   </div>
 
   <div class="contact-container">
@@ -76,7 +70,7 @@
       <h1>Contact</h1>
     </div>
     <div>
-      <p>
+      <p id="contact-bio">
         Questions? Feel free to reach out! I'd love to get to know you better. Leave a message, check out my resume, or
         follow me on one of my social networks.
       </p>
@@ -88,7 +82,7 @@
         <li><a href="https://soundcloud.com/50vincents" target="_blank"><i class="fab fa-soundcloud"></i></a></li>
       </ul>
     </div>
-    <form style="font-size: 17px; margin-left: -5%;" action="https://formspree.io/myydoekp" method="POST">
+    <form style="font-size: 17px;" action="https://formspree.io/myydoekp" method="POST">
       <input style="border-radius: 5px;" type="text" name="name" placeholder="Your Name" required>
       <input style="border-radius: 5px;" type="email" name="_replyto" placeholder="Your Email" required>
       <textarea style="border-radius: 5px;" rows="7" name="message" placeholder="Shoot me a message!" required></textarea>
@@ -97,34 +91,7 @@
   </div>
 
 
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks the button, open the modal 
-    btn.onclick = function() {
-      modal.style.display = "block";
-    }
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-    </script>
-
+  <script src="js/popup.js"></script>
   <script src="js/particles.js"></script>
   <script src="js/app.js"></script>
 </body>
